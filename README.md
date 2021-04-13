@@ -1,1 +1,0 @@
-This is a next project that completes an interview skills test!
