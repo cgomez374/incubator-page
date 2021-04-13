@@ -34,9 +34,42 @@
 
 }
 
+/* buttons */
+.buttonContainer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonContainer button {
+    width: 30%;
+    height: 7rem;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
 @media (max-width: 1000px){
    .startups {
        height: auto;
+   }
+
+   .buttonContainer {
+       flex-direction: column;
+   }
+
+   .buttonContainer button {
+       width: 90%;
    }
     
 }

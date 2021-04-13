@@ -24,9 +24,14 @@ export default function Home() {
       </div>
       <h2 className={styles.subTitle}>upcoming startups</h2>
       <div className={styles.startups + ' row'}>
-      {upcomingStartups.map((item) => (
-          <Startup key={item.projectName} startup={item} />
-        ))}
+        {upcomingStartups.map((item) => (
+            <Startup key={item.projectName} startup={item} />
+          ))}
+      </div>
+      <div className={styles.buttonContainer}>
+        <button>advise a startup</button>
+        <button>join minority ventures cohort</button>
+        <button>help &lt;code /&gt;</button>
       </div>
     </section>
   )
